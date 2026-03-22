@@ -1,0 +1,276 @@
+/* 🌌 BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(circle at top, #1e1b4b, #020617 60%);
+  color: #e5e7eb;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ✨ GLOBAL SMOOTHNESS */
+* {
+  transition: all 0.2s ease;
+}
+
+/* 🧱 LAYOUT */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 48px 20px;
+}
+
+/* 🧠 HEADINGS */
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+
+/* 🪟 GLASS CARD */
+.card {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.7),
+    rgba(2, 6, 23, 0.9)
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* 🔥 CARD HOVER */
+.card:hover {
+  transform: translateY(-6px) scale(1.015);
+  border: 1px solid rgba(139,92,246,0.4);
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 20px rgba(139,92,246,0.15);
+}
+
+/* ✨ INPUTS */
+input, textarea, select {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(2,6,23,0.8);
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+/* 💎 FOCUS */
+input:focus, textarea:focus {
+  border: 1px solid #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139,92,246,0.25);
+}
+
+/* 🚀 BUTTON + LINK SUPPORT */
+button,
+a.secondary-btn {
+  margin-top: 14px;
+  padding: 12px 20px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+
+  background: linear-gradient(135deg,#6366f1,#8b5cf6);
+  color: white;
+
+  box-shadow:
+    0 6px 20px rgba(99,102,241,0.4);
+
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* 🔥 HOVER */
+button:hover,
+a.secondary-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 14px 40px rgba(99,102,241,0.6),
+    0 0 20px rgba(139,92,246,0.4);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* 🔥 SECONDARY BUTTON */
+.secondary-btn {
+  background: rgba(255,255,255,0.05);
+  box-shadow: none;
+}
+
+.secondary-btn:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* 🧭 NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  backdrop-filter: blur(16px);
+  background: rgba(2,6,23,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* LOGO */
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: white;
+}
+
+/* NAV ACTIONS */
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* 🔥 NAV ITEMS (FIXED FOR LINK + BUTTON) */
+.nav-actions button,
+.nav-actions a {
+  background: transparent;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 🔥 NAV HOVER */
+.nav-actions button:hover,
+.nav-actions a:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* 🔍 SEARCH */
+.search {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+/* 🏆 BADGE */
+.badge {
+  background: linear-gradient(135deg,#10b981,#22c55e);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ✨ SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🔐 AUTH PAGES (LOGIN / REGISTER) */
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 20px;
+}
+
+/* 🔥 PREMIUM AUTH CARD */
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.75),
+    rgba(2, 6, 23, 0.95)
+  );
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* 🔥 TITLE */
+.auth-card h2 {
+  margin-bottom: 6px;
+}
+
+.auth-sub {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+/* 🔥 INPUT GROUP */
+.auth-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 🔥 FIX INPUT LOOK */
+.auth-inputs input {
+  margin-top: 0; /* override global */
+}
+
+/* 🔥 BUTTON STACK */
+.auth-card button {
+  width: 100%;
+}
+
+/* 🔥 SECOND BUTTON (REGISTER) */
+.auth-card .secondary-btn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ✨ SUBTLE HOVER LIFT */
+.auth-card:hover {
+  transform: translateY(-4px);
+}
+
+.auth-card {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.75),
+    rgba(2, 6, 23, 0.95)
+  );
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
