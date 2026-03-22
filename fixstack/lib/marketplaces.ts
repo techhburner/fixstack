@@ -1,0 +1,22 @@
+export const marketplaces = [
+  "Amazon",
+  "eBay",
+  "Walmart",
+  "Target",
+  "Best Buy",
+  "Newegg",
+  "MercadoLibre",
+  "Shopify",
+  "TikTok",
+  "Meta",
+  "Back Market",
+  "Overstock",
+  "Lowe's",
+  "Macy's",
+  "Nordstrom",
+  "Bloomingdale's",
+  "Sears",
+  "URBN",
+  "Shein",
+  "Shop Simon"
+]
